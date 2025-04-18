@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Web Page 3</title>
+</head>
+<body>
+  <h1>MY MEDIA PAGE</h1>
+  <p>
+    This is my Media Page using all Media elements in html and specifically using picture element with 3 sources in 
+    order to gain responsiveness for Mobile, Tablet and Laptop.
+  </p>
+  
+  <picture>
+    <!--Mobile View-->
+    <source srcset="assets/Mobile.jpg"
+    width="310" media="(max-width: 768px)"
+    
+    <!--Tablet View-->
+    <source srcset="assets/Tablet.jpg" 
+    media="(min-width: 769px) and (max-width: 1024px)">
+    
+    <!--Laptop View-->
+    <source srcset="assets/Laptop.jpg" 
+    media="(min-width: 1025px)">
+   
+    <!--Fall Back View-->
+    <img src="assets/Fall back.jpg" alt="My Fall Back Picture">
+  </picture></br>
+  
+  <p>
+    <video controls="">
+    <source src="assets/My video.mp4">
+    </video></br>
+    <a href="assets/My video.mp4">Download Video here</a>
+  </p>
+  
+  <p>
+    <audio controls="">
+    <source src="assets/My audio.mp3">
+    </audio></br>
+    <a href="assets/My audio.mp3">Download Audio here</a>
+  </p>
+  
+  <p>
+    <a href="table.html">Click here to go to Table page</a>
+  </p>
+  
+  <p>
+   <a href="index.html">Back to Home Page</a>
+  </p>
+</body>
+</html>
